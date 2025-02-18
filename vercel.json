@@ -27,9 +27,6 @@
     "NODE_ENV": "production",
     "PUBLIC_DIR": "src/public"
   },
-  "static": {
-    "directory": "src/public"
-  },
   "functions": {
     "api/**.ts": {
       "maxDuration": 10,
