@@ -1,9 +1,6 @@
 {
-    "builds": [
-      {
-        "src": "src/app/main.ts",
-        "use": "@vercel/node"
-      }
-    ]
+    "build": {
+      "outputDirectory": "dist"
+    }
   }
   
