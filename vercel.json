@@ -36,8 +36,7 @@
   "build": {
     "env": {
       "RSBUILD_VERSION": "1.2.7"
-    },
-    "postBuild": "rsbuild build"
+    }
   },
   "git": {
     "ignore": [
