@@ -3,20 +3,16 @@
   "builds": [
     {
       "src": "src/app/main.ts",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "src/public/**/*",
-      "use": "@vercel/static"
+      "use": "@vercel/node",
+      "config": {
+        "maxDuration": 10
+      }
     }
   ],
   "routes": [
     {
-      "src": "/fen-tool",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/fen-tool/(.*)",
-      "dest": "/$1"
+      "src": "/(.*)",
+      "dest": "src/app/main.ts"
     }
-  ]}
+  ]
+}
