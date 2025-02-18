@@ -2,26 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/app/main.ts",
+      "src": "package.json",
       "use": "@vercel/node"
-    },
-    {
-      "src": "src/public/manifest.json",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "x*/*.png",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/fen-tool/(.*)",
-      "dest": "/fen-tool"
-    },
-    {
-      "src": "/api/(.*)",
-      "dest": "/src/api/api.ts"
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
