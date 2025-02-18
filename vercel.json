@@ -1,30 +1,15 @@
 {
-  "version": 2,
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
+      "use": "@vercel/node"
     }
   ],
+  "outputDirectory": "build",
   "routes": [
     {
       "src": "/fen-tool/(.*)",
-      "dest": "/fen-tool/index.html"
-    },
-    {
-      "src": "/api/(.*)",
-      "dest": "/fen-tool/api/index"
-    },
-    {
-      "src": "/gen/(.*)",
-      "dest": "/fen-tool/gen/index"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/fen-tool/index.html"
+      "dest": "/fen-tool/$1"
     }
   ]
 }
