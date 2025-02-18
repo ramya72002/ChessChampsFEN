@@ -15,7 +15,7 @@ import { alert } from "./meta/dialogs";
 
 import "../../lib/bootstrap/bootstrap.scss";
 import "./style.scss";
-import "../../build/css/all.min.css";
+// import "../../build/css/all.min.css";
 
 initSDK({
 	getDefault: () => store.board,
