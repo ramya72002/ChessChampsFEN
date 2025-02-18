@@ -1,0 +1,45 @@
+{
+	"cSpell.ignorePaths": [
+		"keywords.md"
+	],
+	"cSpell.words": [
+		"fontawesome",
+		"janko",
+		"Kilfiger",
+		"outfile",
+		"precache",
+		"precaching",
+		"purgecss",
+		"slicksort",
+		"stip",
+		"stockfish",
+		"uncapture",
+		"uncapturing",
+		"uncastle",
+		"uncastled",
+		"uncastling",
+		"unpromote",
+		"YACPDB"
+	],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.expand": false,
+	"explorer.fileNesting.patterns": {
+		"*.css": "$(capture).css.map",
+		"*.js": "$(capture).prod.js, $(capture).min.js, $(capture).js.map",
+		"*.woff2": "$(capture).eot, $(capture).svg, $(capture).ttf, $(capture).woff",
+		".*rc.json": ".$(capture)ignore",
+		".eslintrc.json": "eslint-local-rules.js",
+		".gitignore": ".gitattributes",
+		"README.md": "LICENSE.md",
+		"package.json": "pnpm-lock.yaml, .npmrc"
+	},
+	"files.exclude": {
+		"**/node_modules": true,
+		"test-results/": true,
+		"**/.rsdoctor": true
+	},
+	"npm.packageManager": "pnpm"
+}
