@@ -5,5 +5,11 @@
       "use": "@vercel/node"
     }
   ],
-  "outputDirectory": "build"
+  "outputDirectory": "build",
+  "routes": [
+    {
+      "src": "/fen-tool/(.*)",
+      "dest": "/fen-tool/$1"
+    }
+  ]
 }
