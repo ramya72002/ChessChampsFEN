@@ -1,9 +1,41 @@
 {
-    "builds": [
-      {
-        "src": "src/app/main.ts",
-        "use": "@vercel/node"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/app/main.ts",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "src/public/manifest.json",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "x*/*.png",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/fen-tool/(.*)",
+      "dest": "/fen-tool"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/src/api/api.ts"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "build": {
+    "env": {
+      "RSBUILD_ENV": "production"
+    },
+    "commands": {
+      "build": "rsbuild build"
+    }
+  },
+  "outputDirectory": "docs",
+  "public": "src/public",
+  "cleanUrls": true
+}
