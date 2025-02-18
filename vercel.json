@@ -3,10 +3,7 @@
   "builds": [
     {
       "src": "src/app/main.ts",
-      "use": "@vercel/node",
-      "config": {
-        "maxLambdaSize": "50mb"
-      }
+      "use": "@vercel/node"
     },
     {
       "src": "src/public/**/*",
