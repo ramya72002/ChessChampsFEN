@@ -10,6 +10,10 @@
     {
       "src": "/fen-tool/(.*)",
       "dest": "/fen-tool/$1"
+    },
+    {
+      "src": "/fen-tool",
+      "dest": "/fen-tool/index.html"
     }
   ]
 }
