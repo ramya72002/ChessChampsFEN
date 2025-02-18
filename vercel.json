@@ -27,15 +27,6 @@
   "env": {
     "NODE_ENV": "production"
   },
-  "build": {
-    "env": {
-      "RSBUILD_ENV": "production"
-    },
-    "commands": {
-      "build": "rsbuild build"
-    }
-  },
-  "outputDirectory": "docs",
   "public": "src/public",
   "cleanUrls": true
 }
