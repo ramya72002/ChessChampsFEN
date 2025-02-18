@@ -19,27 +19,4 @@
       "src": "/fen-tool/(.*)",
       "dest": "/$1"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production",
-    "PUBLIC_DIR": "src/public"
-  },
-  "functions": {
-    "api/**.ts": {
-      "maxDuration": 10,
-      "memory": 1024
-    }
-  },
-  "build": {
-    "env": {
-      "RSBUILD_VERSION": "1.2.7"
-    }
-  },
-  "git": {
-    "ignore": [
-      "/node_modules/*",
-      "/dist/*",
-      "/src/generated/*"
-    ]
-  }
-}
+  ]}
